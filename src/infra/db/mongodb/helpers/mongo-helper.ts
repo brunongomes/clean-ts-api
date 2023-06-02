@@ -12,7 +12,7 @@ export const MongoHelper = {
   },
 
   getCollection (name: string): Collection {
-    return this.client.db().collection(name)
+    return this.client.db('clean-node-api').collection(name)
   },
 
   map: (collection: any): any => {
